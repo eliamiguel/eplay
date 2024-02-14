@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 import { Props } from '.'
 
 export const ButtonContainer = styled.button<Props>`
-  border: 2px solid
-    ${(props) => (props.variante === 'primary' ? cores.verde : cores.branca)};
+  border: 2px solid;
+  ${(props) => (props.variante === 'primary' ? cores.verde : cores.branca)};
   color: ${cores.branca};
   background-color: ${(props) =>
     props.variante === 'primary' ? cores.verde : 'transparent'};
